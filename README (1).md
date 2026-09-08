@@ -2,7 +2,7 @@
 
 A simple, end-to-end deep learning project built in Python using **PyTorch**. This model classifies handwritten digits from the classic MNIST dataset using a custom Feed-Forward Neural Network (Multi-Layer Perceptron).
 
-## 🚀 Features
+## Features
 * **Data Pipeline:** Automatically downloads, normalizes, and batches the MNIST dataset using `torchvision`.
 * **Neural Network Architecture:** Built with PyTorch (`nn.Module`), featuring an input flattening layer, a hidden layer with ReLU activation, and a 10-class output layer.
 * **Training & Optimization:** Implements a full training loop using Cross-Entropy Loss and the Adam optimizer.
@@ -10,13 +10,13 @@ A simple, end-to-end deep learning project built in Python using **PyTorch**. Th
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Language:** Python
 * **Frameworks & Libraries:** PyTorch, Torchvision, Matplotlib, NumPy
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository:**
    ```bash
@@ -37,7 +37,7 @@ A simple, end-to-end deep learning project built in Python using **PyTorch**. Th
 
 ---
 
-## 🏃‍♂️ Usage
+## Usage
 
 Run the main script to download the dataset, train the model, print final testing accuracy, and launch the prediction visualization window:
 
@@ -47,7 +47,7 @@ python main.py
 
 ---
 
-## 📊 Project Structure
+## Project Structure
 ```text
 mnist-neural-net/
 │
