@@ -62,10 +62,12 @@ with torch.no_grad():
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
 
+# Should reveal 90%+ accuracy
 print(f"Accuracy on 10,000 test images: {100 * correct / total:.2f}%")
 
-
-# Visualization
+#
+# **Visualization**
+#
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -91,7 +93,7 @@ for i, ax in enumerate(axes.flatten()):
     ax.imshow(img, cmap='gray')
     ax.axis('off')
 
-    #Label the image: Green if correct, Red if the network guessed wrong
+    # Label the image number guess alongside the real value: Green if correct, Red if the network guessed wrong
     color = 'green' if predicted[i] == labels[i] else 'red'
     ax.set_title(f"Predicted: {predicted[i].item()}\nTrue: {labels[i].item()}", color=color)
 
